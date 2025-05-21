@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xat</title>
+  <style>
+    body { font-family: Arial; width: 300px; padding: 10px; }
+    #messages { height: 200px; overflow-y: auto; border: 1px solid #ccc; padding: 5px; margin-bottom: 10px; }
+    #input { width: 80%; }
+    #send { width: 18%; }
+  </style>
+</head>
+<body>
+  <h3>Xat de l'extensio</h3>
+  <input type="text" id="username" placeholder="El teu nom" />
+  <div id="chat">
+    <div id="messages" style="height: 200px; overflow-y: auto;"></div>
+    <input type="text" id="input" placeholder="Escriu un missatge" />
+    <button id="send">Enviar</button>
+  </div>
+  <script src="firebase-app-compat.js"></script>
+  <script src="firebase-database-compat.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
